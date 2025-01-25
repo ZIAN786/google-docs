@@ -14,6 +14,8 @@ import ImageResize from 'tiptap-extension-resize-image'
 import { useEditorStore } from '@/store/use-editor-store'
 import FontFamily from '@tiptap/extension-font-family'
 import TextStyle from '@tiptap/extension-text-style'
+import { Color } from '@tiptap/extension-color'
+import Highlight from '@tiptap/extension-highlight'
 
 
 export const Editor = () => {
@@ -54,6 +56,8 @@ export const Editor = () => {
             StarterKit,
             FontFamily,
             TextStyle,
+            Color,
+            Highlight.configure({ multicolor: true }),
             Underline,
             Image,
             ImageResize,
